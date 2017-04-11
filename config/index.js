@@ -26,6 +26,7 @@ module.exports = {
         require('sphinx/routing/routing.provider'),
         require('sphinx/mail/mail.provider'),
         require('sphinx/timer/timer.provider'),
+        require('sphinx/queue/queue.provider'),
 
         // Extended packs
         require('sphinx-auth/auth.provider'),
@@ -54,5 +55,6 @@ module.exports = {
     cache   : require('./cache'),
     view    : require('./view'),
     routes  : require('./routes'),
-    mail    : require('./mail')
+    mail    : require('./mail'),
+    queue   : require('./queue'),
 };

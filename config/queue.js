@@ -4,15 +4,18 @@ module.exports = {
 
     'adapters': {
         'send-email': {
-            'adapter': 'synced'
+            'adapter': 'dumb',
+            'retry'         : 1,
+            'timeout'       : 10000,
+            'instances'     : 1,
+            'memory-limit'  : '100M'
         },
         'general': {
             'adapter': 'dumb',
-            'worker': {
-                number  : 1,
-                retry   : 1,
-                timeout : 10000
-            },
+            'retry'         : 1,
+            'timeout'       : 10000,
+            'instances'     : 1,
+            'memory-limit'  : '100M'
         }
     }
 };
